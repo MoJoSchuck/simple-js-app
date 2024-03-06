@@ -1,13 +1,14 @@
-let myName = 'Bob';
+ /* let myName = 'Bob';
 document.write(myName);
 myName = 'John Doe';
 document.write(myName);
 
-
-
-
-
 let size = 100;
 let doubleSize = size * 2;
 let minSize = (doubleSize * 2) - (size / 2);
-document.write(minSize);
+document.write(minSize); */
+
+alert('Hello world');
+
+favoriteFood = 'Tagliatelle al Tartufo'
+document.write(favoriteFood)
