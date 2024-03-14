@@ -148,7 +148,8 @@ let pokemonList = [
 // The loop runs as long as the index i is less than the length of the pokemonList array.
 // Inside the loop, pokemonList[i] accesses each Pokémon object, and the name and height properties are concatenated to form a string that is written to the document.
 
-for (let i = 0; i < pokemonList.length; i++) {
+/* for (let i = 0; i < pokemonList.length; i++) {
+    
     // Display the name and height of each Pokémon
     document.write(pokemonList[i].name + " (Height: " + pokemonList[i].height + "m)");
 
@@ -159,5 +160,61 @@ for (let i = 0; i < pokemonList.length; i++) {
 
     // Add a line break after each Pokémon
     document.write("<br>");
-}
+} */
 
+// Part 1: forEach() Loops
+pokemonList.forEach(function(pokemon) {
+    document.write(pokemon.name + " (Height: " + pokemon.height + "m)");
+  
+    if (pokemon.height >= 2.0) {
+      document.write(" - Wow, that's big!");
+    }
+  
+    document.write("<br>");
+  });
+  
+  // Part 2: IIFE
+ /*  let pokemonRepository = (function() {
+    let pokemonList = [];
+  
+    function getAll() {
+      return pokemonList;
+    }
+  
+    function add(pokemon) {
+      if (typeof pokemon === 'object') {
+        pokemonList.push(pokemon);
+      } else {
+        console.error('Only objects can be added to the pokemonList.');
+      }
+    }
+  
+    return {
+      getAll: getAll,
+      add: add
+    };
+  })(); */
+  
+  // Wrap pokemonList array in an IIFE
+let pokemonRepository = (function() {
+    let pokemonList = [];
+  
+    // Public functions
+    return {
+      getAll: function() {
+        return pokemonList;
+      },
+      add: function(pokemon) {
+        if (typeof pokemon === 'object' && Object.keys(pokemon).length === 3) {
+          pokemonList.push(pokemon);
+        } else {
+          console.error('Invalid pokemon data:', pokemon);
+        }
+      },
+      findPokemonByName: function(name) {
+        return pokemonList.filter(function(pokemon) {
+          return pokemon.name === name;
+        });
+      }
+    };
+  })();
