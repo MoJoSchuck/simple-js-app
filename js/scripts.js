@@ -143,85 +143,49 @@ let pokemonRepository = (function () {
         { name: "Mew", height: 0.4, weight: 40, types: ['psychic'], japaneseName: "ミュウ" },
     ];
 
-
-    // This loop iterates over each element in the pokemonList array.
-    // It uses document.write() to display the name and height of each Pokémon on the webpage.
-    // The loop runs as long as the index i is less than the length of the pokemonList array.
-    // Inside the loop, pokemonList[i] accesses each Pokémon object, and the name and height properties are concatenated to form a string that is written to the document.
-
-    /* for (let i = 0; i < pokemonList.length; i++) {
-        
-        // Display the name and height of each Pokémon
-        document.write(pokemonList[i].name + " (Height: " + pokemonList[i].height + "m)");
     
-        // Check if the height is above a certain threshold
-        if (pokemonList[i].height >= 2.0) {
-            document.write(" - Wow, that's big!");
-        }
     
-        // Add a line break after each Pokémon
-        document.write("<br>");
-    } */
 
-    // Part 1: forEach() Loops
-    document.write('<ul>'); // Opening <ul> tag
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('pokemon-button');
+        button.addEventListener('click', function() {
+            showDetails(pokemon);
+        });
+        listItem.appendChild(button);
+        pokemonList.appendChild(listItem);
+    }
 
-    pokemonList.forEach(function (pokemon) {
-        // Display the name and height of each Pokémon as list items
-        document.write('<li>' + pokemon.name + " (Height: " + pokemon.height + "m)");
+    function showDetails(pokemon) {
+        console.log(pokemon);
+        // Hier können Sie weitere Aktionen basierend auf den Pokemon-Details durchführen
+    }
 
-        if (pokemon.height >= 2.0) {
-            document.write(" - Wow, that's big!");
-        }
-
-        document.write('</li>'); // Closing </li> tag
-
-    });
-
-    document.write('</ul>'); // Closing </ul> tag
-
-    // Part 2: IIFE
-    /*  let pokemonRepository = (function() {
-       let pokemonList = [];
-     
-       function getAll() {
-         return pokemonList;
-       }
-     
-       function add(pokemon) {
-         if (typeof pokemon === 'object') {
-           pokemonList.push(pokemon);
-         } else {
-           console.error('Only objects can be added to the pokemonList.');
-         }
-       }
-     
-       return {
-         getAll: getAll,
-         add: add
-       };
-     })(); */
-
-    // Wrap pokemonList array in an IIFE
-
-    let repository = [];
-
-    // Public functions
     return {
-        getAll: function () {
-            return repository;
+        getAll: function() {
+            return pokemonList;
         },
-        add: function (pokemon) {
+        add: function(pokemon) {
             if (typeof pokemon === 'object' && Object.keys(pokemon).length === 3) {
-                repository.push(pokemon);
+                pokemonList.push(pokemon);
             } else {
                 console.error('Invalid pokemon data:', pokemon);
             }
         },
-        findPokemonByName: function (name) {
-            return repository.filter(function (pokemon) {
+        findPokemonByName: function(name) {
+            return pokemonList.filter(function(pokemon) {
                 return pokemon.name === name;
             });
-        }
+        },
+        addListItem: addListItem
     };
 })();
+
+pokemonRepository.getAll().forEach(function(pokemon) {
+    pokemonRepository.addListItem(pokemon);
+});
+
+
