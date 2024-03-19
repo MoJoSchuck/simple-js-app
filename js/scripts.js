@@ -161,7 +161,7 @@ let pokemonRepository = (function () {
 
     function showDetails(pokemon) {
         console.log(pokemon);
-        // Hier können Sie weitere Aktionen basierend auf den Pokemon-Details durchführen
+        // Further actions based on the Pokemon details later here
     }
 
     return {
