@@ -4,16 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple JS App</title>
+    <title>Poké95</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<header></header>
-<main>
 
-    <body>
-        <script src="js/scripts.js"></script>
-    </body>
-</main>
-<footer></footer>
+<body>
+        <header class="header">
+            <div class="header-1">
+                <div style="position: relative; display: inline-block;">
+                    <button type="button" class="header-button-before">
+
+                    </button>
+                    <ul role="menuitem" class="window1">
+                        <li role="menuitem" class="window1-items">
+                            <img src="img/windows-cd.png" alt="aboutLogo" style="width: 22px; margin-right: 8px;">
+                            <span>GitHub Repo</span>
+                        </li>
+
+                        <li role="menuitem" class="window1-items">
+                            <img src="img/computer.png" alt="aboutLogo" style="width: 22px; margin-right: 8px;">
+                            <span>About</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="header-button">
+                        <img src="img/windowslogo.png" alt="winlogo" style="margin-left: -2px; margin-right: 5px; width: 20px;">
+                        Poké95
+                    </button>
+                </div>
+                <div class="header-all header-all1" data-testid="variant-default" style="margin-left: auto;">
+                    <input type="text" placeholder="Search..." class="header-input">
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <ul class="pokemon-list"></ul>
+    </main>
+    <footer></footer>
+    <script src="js/scripts.js"></script>
+</body>
 
 </html>
