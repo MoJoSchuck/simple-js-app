@@ -5,41 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poké95</title>
+    <link rel="icon" type="image/svg+xml" href="img/freches Knofensa.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-        <header class="header">
-            <div class="header-1">
-                <div style="position: relative; display: inline-block;">
-                    <button type="button" class="header-button-before">
-
-                    </button>
-                    <ul role="menuitem" class="window1">
-                        <li role="menuitem" class="window1-items">
-                            <img src="img/windows-cd.png" alt="aboutLogo" style="width: 22px; margin-right: 8px;">
-                            <span>GitHub Repo</span>
-                        </li>
-
-                        <li role="menuitem" class="window1-items">
-                            <img src="img/computer.png" alt="aboutLogo" style="width: 22px; margin-right: 8px;">
-                            <span>About</span>
-                        </li>
-                    </ul>
-                    <button type="button" class="header-button">
-                        <img src="img/windowslogo.png" alt="winlogo" style="margin-left: -2px; margin-right: 5px; width: 20px;">
-                        Poké95
-                    </button>
-                </div>
-                <div class="header-all header-all1" data-testid="variant-default" style="margin-left: auto;">
-                    <input type="text" placeholder="Search..." class="header-input">
-                </div>
+    <header class="headerAll">
+        <div class="headerContent">
+            <div>
+                <button type="button" class="buttonPoké95">
+                    <img src="img/windowslogo.png" alt="winlogo"
+                        style="margin-left: -2px; margin-right: 5px; width: 20px;">Poké95
+                </button>
             </div>
-        </header>
+            <div class="headerMid1 headerMid2">
+                <input type="text" placeholder="Search..." class="headerSearch" value>
+            </div>
+        </div>
+    </header>
 
     <main>
         <ul class="pokemon-list"></ul>
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">Close</button>
+                <h1 id="modalTitle"></h1>
+                <img id="modalImage" alt="Pokemon Image">
+                <p id="modalHeight"></p>
+                <p id="modalTypes"></p>
+                <!-- Additional details can be added here -->
+            </div>
+        </div>
     </main>
+    
     <footer></footer>
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch-polyfill.js"></script>
