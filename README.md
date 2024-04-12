@@ -35,26 +35,3 @@ Handle errors (such as trying to load data while offline) and show user-friendly
 ## Mock-ups or Other Assets
 
 Mock-ups for a simple Pokédex app are provided for reference purposes. Note that the app may look different depending on the type of data you’re displaying. Feel free to get creative and use a different layout for your data if desired.
-
-## Project Deliverables
-
-Throughout this Achievement, I’ll be working from Exercise to Exercise to complete my Achievement project. For each task, I’ll submit a deliverable that directly contributes to the final product—in this case, my JavaScript app.
-
-## Exercises Overview
-
-This project consists of multiple exercises, each focusing on different aspects of JavaScript programming, DOM interaction, APIs, complex UI elements, and more. Here's an overview of the exercises involved:
-
-- Exercise 1: Set up the general outline of my app.
-- Exercises 2 and 3: JavaScript Basics Part 1 & 2
-- Exercises 4 and 5: JavaScript Functions Part 1 & 2
-- Exercise 6: DOM Interaction
-- Exercise 7: APIs, Ajax & Asynchronous Behavior
-- Exercise 8: Complex UI Elements with JavaScript
-- Exercise 9: Introduction to jQuery
-- Exercise 10: Bootstrap & UI Libraries
-- Exercise 11: Performance & Debugging
-## Optional: Advanced Deliverables
-
-In addition to the required features, I can explore more advanced topics and add additional features to my app as desired. Some optional topics include touch interactions, loading indicators, and enhancing the app's aesthetics and functionality.
-
-Let's start building my Pokédex JavaScript app and have fun learning along the way!
