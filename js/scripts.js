@@ -77,7 +77,9 @@ let pokemonRepository = (function () {
             // Now we add the details to the item
             item.imageUrl = details.sprites.front_default;
             item.height = details.height;
-            item.types = details.types;
+            item.weight = details.weight;
+            item.types = details.types
+            
         }).catch(function (e) {
             console.error(e);
         });
@@ -97,7 +99,9 @@ let pokemonRepository = (function () {
             modalTitle.textContent = item.name;
             modalImage.src = item.imageUrl;
             let adjustedHeight = item.height / 10;
+            let adjustedWeight = item.weight / 10;
             modalHeight.textContent = 'Height: ' + adjustedHeight + 'm';
+            modalWeight.textContent = 'Weight: ' + adjustedWeight + 'kg';
             modalTypes.textContent = 'Types: ' + item.types.map(type => type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1)).join(', ');
 
             // Open modal
