@@ -14,5 +14,5 @@ I should be able to view a list of data and see more details for a given data it
 
 ## Project URL
 
-[Live](mojoschuck.github.io/simple-js-app/)
+[Live]([mojoschuck.github.io/simple-js-app/](https://mojoschuck.github.io/simple-js-app/))
 
