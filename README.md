@@ -38,10 +38,12 @@ The server runs by default on port 8080.
 
 ## Screenshots
 
-### Main View
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/user-attachments/assets/b7d2487f-a62e-488c-9ca1-6f678394b317" alt="Main View" style="width: 50%; height: auto;">
-</div>
+### Web View
+<img src="https://github.com/user-attachments/assets/b7d2487f-a62e-488c-9ca1-6f678394b317" alt="Main View" width="600">
+
+### Mobile View
+<img src="https://github.com/user-attachments/assets/300c9e98-d132-4325-a4ba-cc83a009234c" alt="Mobile View" width="299">
+
 
 ## Project URL
 
