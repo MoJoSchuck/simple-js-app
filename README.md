@@ -1,18 +1,61 @@
 # Pokédex JavaScript App
 
 ## Objective
-This project is a small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.
+The Pokédex JavaScript app is a small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail. This project aims to provide a functional and aesthetically pleasing interface for viewing Pokémon details.
 
-## Objective
+## Context
+The best way to learn about programming is through hands-on projects. This app demonstrates core JavaScript principles, API integration, and UI/UX design. It's designed to be a complete, fully functioning web application that can be showcased in a portfolio.
 
-The objective of this project is to build a complete, fully functioning JavaScript web application. As part of this project, I aim to learn about programming by completing a project using JavaScript and related technologies. Since I haven’t yet learned how to build my own API, I'll be relying on an external data source for this project.
+## Technologies
 
-## Features and Requirements
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- External API: [PokéAPI](https://pokeapi.co/)
 
-### User Goals
-I should be able to view a list of data and see more details for a given data item on demand. In this case, I'll build a simple Pokédex app to display a list of Pokémon.
+## Features
+
+- **Main View**
+  - Displays a list of Pokémon loaded from the PokéAPI
+  - Each Pokémon item includes an image, name, and basic information
+  - Search functionality to filter the list of Pokémon
+
+- **Details View**
+  - Shows detailed information about a selected Pokémon in a modal
+  - Includes additional data such as types, abilities, and stats
+
+- **Additional Features**
+  - Loading indicators while fetching data
+  - User-friendly error messages for handling API errors
+
+## Installation and Usage
+
+1. Clone the repository: `git clone https://github.com/MoJoSchuck/simple-js-app.git`
+2. Navigate to the project directory: `cd simple-js-app`
+3. Install dependencies (if any): `npm install`
+4. Start the development server: `npm start`
+The server runs by default on port 8080.
+
+## Screenshots
+
+### Main View
+![Main View](screenshots/Bildschirmfoto-2024-08-08-um-09.36.52.png)
 
 ## Project URL
 
-[Live](https://mojoschuck.github.io/simple-js-app/)
+[Live Demo](https://mojoschuck.github.io/simple-js-app/)
+
+## Contributing
+
+Please read the contribution guidelines before contributing.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [PokéAPI](https://pokeapi.co/) for providing the data
+- Inspiration from various online tutorials and resources
 
