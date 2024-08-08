@@ -40,7 +40,7 @@ The server runs by default on port 8080.
 ## Screenshots
 
 ### Main View
-![Main View](screenshots/Bildschirmfoto-2024-08-08-um-09.36.52.png)
+<img src="https://github.com/user-attachments/assets/b7d2487f-a62e-488c-9ca1-6f678394b317" alt="Hauptansicht" width="600">
 
 ## Project URL
 
