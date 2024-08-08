@@ -14,6 +14,9 @@ The best way to learn about programming is through hands-on projects. This app d
 - Bootstrap
 - External API: [PokéAPI](https://pokeapi.co/)
 
+## Design Inspiration
+The design of this application is inspired by the aesthetics of Windows 95, paying homage to the era when Pokémon was first introduced in the late 90s.
+
 ## Features
 
 - **Main View**
