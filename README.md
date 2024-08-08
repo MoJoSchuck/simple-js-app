@@ -25,10 +25,6 @@ The best way to learn about programming is through hands-on projects. This app d
   - Shows detailed information about a selected Pokémon in a modal
   - Includes additional data such as types, abilities, and stats
 
-- **Additional Features**
-  - Loading indicators while fetching data
-  - User-friendly error messages for handling API errors
-
 ## Installation and Usage
 
 1. Clone the repository: `git clone https://github.com/MoJoSchuck/simple-js-app.git`
