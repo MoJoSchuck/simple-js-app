@@ -1,5 +1,6 @@
 # Pokédex JavaScript App
 
+## Objective
 This project is a small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.
 
 ## Objective
@@ -11,4 +12,7 @@ The objective of this project is to build a complete, fully functioning JavaScri
 ### User Goals
 I should be able to view a list of data and see more details for a given data item on demand. In this case, I'll build a simple Pokédex app to display a list of Pokémon.
 
+## Project URL
+
+[Live](mojoschuck.github.io/simple-js-app/)
 
